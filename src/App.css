@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Spectral:wght@500&display=swap');
+
+body{
+  font-family: 'Karla', sans-serif;
+}
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -72,6 +79,10 @@
   background-color: rgba(236, 235, 235, 0.732);
   padding: 2rem;
   width: 45%;
+}
+
+.title{
+  font-family: 'Spectral', serif;
 }
 
 /* Bottom */

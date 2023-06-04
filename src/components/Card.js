@@ -14,7 +14,7 @@ const Card = (props) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{props.details.title}</Typography>
+          <Typography className='title'>{props.details.title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography style={{fontWeight: 'bold'}}>
