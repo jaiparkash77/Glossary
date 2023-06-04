@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../images/logo.webp"
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const Header = () => {
+const Header = ({myQuery}) => {
+    const [searchText, setSearchText] = useState("");
+    const handleChange=(e)=>{
+        setSearchText(e.target.value);
+    }
+    const handleSearch=()=>{
+        myQuery(searchText);
+    }
   return (
     <div className='header'>
         <div className='logo'>
@@ -21,7 +28,8 @@ const Header = () => {
         </div>
         <div className='nav'>
             <div>
-                <SearchIcon />
+                <input type='text' style={{height:30, width:250}} onChange={handleChange}></input>
+                <SearchIcon style={{fontSize:30}} onClick={handleSearch} />
             </div>
             <div>
                 <PersonIcon />

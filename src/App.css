@@ -55,6 +55,11 @@
   padding-bottom: 2rem;
 }
 
+.dropdown{
+  width:10rem;
+  height: 2rem;
+}
+
 .glossary{
   display: flex;
   flex-wrap: wrap;
@@ -67,4 +72,92 @@
   background-color: rgba(236, 235, 235, 0.732);
   padding: 2rem;
   width: 45%;
+}
+
+/* Bottom */
+.bottom{
+  background-image: url('https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bottomContent{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.form{
+  display: flex;
+  gap: 10px;
+}
+
+form>input{
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  background-color: transparent;
+}
+
+form>input{
+  border-bottom: 2px solid white;
+}
+
+button{
+  width: 10rem;
+  height: 3rem;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.footer{
+  height: 60vh;
+  display: flex;
+}
+
+.footer-logo{
+  padding: 3rem;
+}
+
+.footer-logo>img{
+  width: 7rem;
+}
+
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.above{
+  padding: 3rem;
+  font-weight: 600;
+}
+
+.above>ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.below{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;  
+
+}
+
+.below>div>ul{
+  list-style: none;
+}
+
+.below>div>ul>li{  
+  padding: 10px;
 }
